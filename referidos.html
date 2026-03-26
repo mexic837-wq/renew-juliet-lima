@@ -84,8 +84,10 @@
                 <label for="telefono" class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1 px-1">Teléfono / WhatsApp</label>
                 <div class="relative">
                     <input type="tel" id="telefono" name="telefono" required 
+                        pattern="^\+1[0-9]{10}$" 
+                        title="Formato: +1 seguido de 10 dígitos sin espacios ni guiones."
                         class="w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyanAccent/50 focus:border-cyanAccent transition-all" 
-                        placeholder="Incluye código de área">
+                        placeholder="+1 (10 dígitos)">
                 </div>
             </div>
 
